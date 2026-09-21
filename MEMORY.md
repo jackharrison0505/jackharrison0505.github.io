@@ -42,7 +42,8 @@ visitors immediate insights on their brand's prospects in China.
   `main` branch, `/docs` folder → **https://jackharrison0505.github.io/**
 - Git identity set per-repo as "Jack Harrison" with GitHub's no-reply address (keeps the
   real email out of public commit history).
-- **Still open:** contact email is a placeholder (`CONTACT_EMAIL` in `team.html`).
+- Contact email left as **TBC** (Jack's call, 2026-09-21). The contact button points to
+  LinkedIn in the meantime so nothing on the live site is broken.
 - No code or content written yet.
 
 ---
@@ -131,7 +132,8 @@ _Ideas discussed together — including ones we have not acted on yet._
 
 - [x] Phase 1: build the four-page brochure site (plain HTML/CSS)
 - [x] Draft content for "What We Do" and the "Entering China" primer
-- [ ] Jack reviews wording; supply contact email
+- [ ] Jack reviews wording
+- [ ] Contact email (TBC) — swap the LinkedIn button for mailto when decided
 - [x] Publish to GitHub Pages → https://jackharrison0505.github.io/
 - [x] Decide hosting → GitHub Pages
 - [ ] Phase 2: design and build the "Your Name in Chinese" tool
