@@ -48,6 +48,28 @@ visitors immediate insights on their brand's prospects in China.
 
 ---
 
+### 2026-09-21 — Session 1, later: v2 redesign (Jack's feedback: "cool, but feels the same as before")
+- **Bold hero:** the home page now opens with "What's your brand called in China?" — dark
+  panel, giant faint 名 glyph, an input box. Powered today by `docs/names.js`, a curated set
+  of ~22 well-documented brand names (Coca-Cola 可口可乐, BMW 宝马, Airbnb 爱彼迎 …) each with
+  pinyin, meaning, naming-type tag and a one-paragraph note. Unknown names get an honest
+  "not yet — this is why it matters + AI tool coming soon" panel. A scrolling ticker of
+  examples sits under the input. Phase 2 swaps `lookup()` for the AI call; UI stays.
+- **Message evolved** from "you must be in China" to **"You don't need to be in China. You
+  need to understand it."** New home sections: thesis strap; a "China, 2020 → now" then/now
+  comparison (cross-border testing, Douyin livestreams, AI assistants shaping discovery,
+  confident domestic brands, AI-assisted market reads); services reframed as
+  **Understand · Enter · Operate**; dark CTA band "Get a China read on your brand".
+- Copy on the other pages nudged the same way (primer intro, channels point mentions AI
+  assistants; What-we-do step 1 mentions AI-assisted analysis; new "Current, not nostalgic"
+  principle).
+- Added `favicon.svg` (名 on ink) and Open Graph title/description tags on every page so
+  shared links preview properly. No OG image yet (needs a 1200×630 PNG).
+- **⚠ Claims for Jack to verify** — I wrote these as evolved positioning, not from ArcOn
+  material: "AI-assisted market reads", social-listening data in the analysis, "pay with
+  their face", "answer on WeChat in minutes", the 2020→now comparison lines. Soften or cut
+  anything ArcOn doesn't actually do.
+
 ## Key Decisions
 
 | Date | Decision | Reasoning |
@@ -55,7 +77,8 @@ visitors immediate insights on their brand's prospects in China.
 | 2026-09-21 | Keep project context in `CLAUDE.md`, running notes in `MEMORY.md` | Both files are read at the start of every session so context carries across sessions |
 | 2026-09-21 | **Pages (v1):** Home, What We Do, Entering China, Team / Contact | Covers the brief; a fifth page/section for the AI tool comes in Phase 2 |
 | 2026-09-21 | **Entering China = short primer** | One page: key considerations, common pitfalls, how ArcOn helps. Positions ArcOn as the guide without giving everything away |
-| 2026-09-21 | **Design: fresh, minimal look** | Jack is open to a new look but doesn't want a redesign for its own sake — keep it clean, only go bold where there's a clear reason |
+| 2026-09-21 | **Design: fresh, minimal look** → **v2: bold** | Started minimal; Jack's reaction to v1 was "feels the same as before", so v2 leads with the interactive Chinese-name hero on dark ink. Inner pages stay calm |
+| 2026-09-21 | **Naming demo ships before the AI tool** | A curated, fact-checked set of famous names makes the hero genuinely interactive today with zero hallucination risk; the AI version slots in behind the same UI |
 | 2026-09-21 | **Stack: plain HTML/CSS/JS for the site + one serverless function for the AI tool** | Jack hasn't built a site before, so the site itself stays as simple as possible (files you can open and read). The AI tool needs a server-side piece so the API key is never exposed in the browser — a single serverless function (Vercel/Netlify/Cloudflare) is the smallest way to do that |
 | 2026-09-21 | **Two phases** | Phase 1: brochure site, deployable on its own. Phase 2: AI Brand Insight tool. Ship value early; the tool has more unknowns |
 | 2026-09-21 | **Audience: Western brands looking to enter China** | Shapes copy tone — assume no China presence yet, explain the market from the outside in |
@@ -88,6 +111,9 @@ _Insights, research findings, and useful references picked up along the way._
   just `git add -A && git commit -m "…" && git push`. Pages takes ~1 min to rebuild.
 - **User site vs. project site:** a repo named `<username>.github.io` publishes at the
   root address; any other repo name publishes at `<username>.github.io/<repo>/`.
+- **Browser-pane gotcha:** screenshots of a background tab (or taken mid smooth-scroll in
+  a shrunken pane) come back blank paper — it looked like a rendering bug and wasn't. Front
+  the tab and use `scroll-behavior:auto` / read_page to verify.
 - **Static host vs. function host:** GitHub Pages and Netlify both serve static files for
   free, but only Netlify (and Cloudflare, Vercel) can also *run code* server-side. Two
   different jobs; a site can use one of each.
@@ -132,7 +158,8 @@ _Ideas discussed together — including ones we have not acted on yet._
 
 - [x] Phase 1: build the four-page brochure site (plain HTML/CSS)
 - [x] Draft content for "What We Do" and the "Entering China" primer
-- [ ] Jack reviews wording
+- [ ] Jack reviews v2 wording — especially the ⚠ claims above
+- [ ] OG share image (1200×630) so links preview with a picture
 - [ ] Contact email (TBC) — swap the LinkedIn button for mailto when decided
 - [x] Publish to GitHub Pages → https://jackharrison0505.github.io/
 - [x] Decide hosting → GitHub Pages

@@ -3,12 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ArcOn Brands — Your bridge to China</title>
+<title>ArcOn Brands — Understand China first</title>
 <meta name="description" content="Brand management and market entry for Western brands entering Greater China. Strategy, launch and full operational control from Hong Kong, Shanghai and London.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ArcOn Brands — Understand China first">
+<meta property="og:description" content="Brand management and market entry for Western brands entering Greater China. Strategy, launch and full operational control from Hong Kong, Shanghai and London.">
+<meta property="og:site_name" content="ArcOn Brands">
 <link rel="stylesheet" href="styles.css">
+<script src="names.js" defer></script>
 </head>
 <body>
 <header>
@@ -23,57 +29,94 @@
   </div>
 </header>
 <main>
-<section class="hero">
+
+<section class="hero-dark">
   <div class="wrap">
-    <div class="eyebrow">Brand management &amp; market entry · Greater China</div>
-    <h1>Your bridge to the world's fastest growing market.</h1>
-    <p class="lede">We take Western brands with a great story into China — and run them there. Market entry strategy, launch, and full operational control, from a team that has done it for Fortnum &amp; Mason, Bremont and Charbonnel et Walker.</p>
-    <div class="cta-row">
-      <a class="btn primary" href="entering-china.html">How to enter China</a>
-      <a class="btn ghost" href="team.html#contact">Talk to us</a>
+    <div class="eyebrow">Start here</div>
+    <h1>What's your brand called in China?</h1>
+    <p class="lede">Every brand gets a Chinese name. The good ones choose it. Type a brand to see how the best names were built — and what yours is up against.</p>
+    <div class="namer">
+      <form id="namer" autocomplete="off">
+        <input type="text" name="brand" placeholder="Type a brand — try Coca-Cola, BMW, Airbnb…" aria-label="Brand name" maxlength="40">
+        <button type="submit">Show me</button>
+      </form>
+      <div class="hint">Or <button type="button" id="try">show me a famous example</button>. Our AI tool for <em>any</em> brand name is coming soon.</div>
     </div>
+    <div class="result" id="result" aria-live="polite"></div>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track" id="track"></div></div>
   </div>
 </section>
 
-<section>
-  <div class="wrap split">
-    <div>
-      <div class="eyebrow">The question has changed</div>
-      <h2>Not <em>if</em>. When, how, and with whom.</h2>
-    </div>
-    <div>
-      <p class="lede">China is the largest consumer market on earth and still one of the hardest to read from outside. Brands that succeed there don't just export — they arrive with the right name, the right channels, the right partners and a plan measured in years, not seasons.</p>
-      <p>ArcOn Brands exists to make that arrival work. We are based in Hong Kong and Shanghai with a London office, we speak the language, and we have spent three decades between us building consumer businesses in the region.</p>
+<section class="thesis">
+  <div class="wrap">
+    <div class="eyebrow">The idea has changed</div>
+    <h2>You don't need to be in China. You need to <em>understand</em> it.</h2>
+    <div class="split" style="margin-top:2rem">
+      <div></div>
+      <div>
+        <p class="lede">Five years ago the question was whether to set up in China. Now it's whether you understand a market that has moved further and faster than any other — in how people discover, judge and buy brands.</p>
+        <p>Chinese consumers shop inside livestreams, take advice from AI assistants, pay with their face, and expect a brand to answer on WeChat in minutes. Domestic brands have become formidable — faster, more digital, and often better at telling a Chinese story than the imports. The bar for a Western brand is higher. The cost of finding out where you stand is lower than it has ever been.</p>
+        <p>ArcOn Brands helps you understand first, then decide — and, if you go, we build and run it with you.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="deep">
   <div class="wrap">
-    <div class="eyebrow">What we do</div>
-    <h2>Three ways we work with brands</h2>
-    <div class="grid three" style="margin-top:2rem">
-      <div class="card">
-        <div class="num">01</div>
-        <h3>Market entry strategy</h3>
-        <p>In-depth market analysis and a detailed entry plan — channels, pricing, positioning and a four-year budget forecast — so the decision to go is made on evidence.</p>
+    <div class="eyebrow">What's changed</div>
+    <h2>China, 2020 → now</h2>
+    <div class="compare" style="margin-top:2rem">
+      <div class="deep-col">
+        <h3>Then</h3>
+        <ul>
+          <li>Set up an entity, hire a team, open on Tmall</li>
+          <li>Search, banners and a KOL campaign</li>
+          <li>Foreign heritage was the story</li>
+          <li>Learn by spending — 18 months to a first read</li>
+          <li>A Chinese name was a translation task</li>
+        </ul>
       </div>
-      <div class="card">
-        <div class="num">02</div>
-        <h3>Brand launch</h3>
-        <p>Chinese naming and trademark, e-commerce and retail set-up, marketing and PR. We launch the brand as its team on the ground.</p>
-      </div>
-      <div class="card">
-        <div class="num">03</div>
-        <h3>Ongoing management</h3>
-        <p>Post-launch support through to full operational control: operations, HR, finance, marketing and tech, reported back to you with complete transparency.</p>
+      <div class="now">
+        <h3>Now</h3>
+        <ul>
+          <li>Test cross-border first — no entity, real demand data in weeks</li>
+          <li>Livestream commerce on Douyin; discovery on Xiaohongshu; AI assistants shaping what people ask for</li>
+          <li>Heritage still matters — but only when it's told in a Chinese idiom, against confident local brands</li>
+          <li>Learn by analysis — AI-assisted market reads before you commit a yuan</li>
+          <li>A Chinese name is brand strategy, and a race to the trademark office</li>
+        </ul>
       </div>
     </div>
-    <p style="margin-top:2rem"><a href="what-we-do.html">More on how we work →</a></p>
   </div>
 </section>
 
 <section>
+  <div class="wrap">
+    <div class="eyebrow">What we do</div>
+    <h2>Understand. Enter. Operate.</h2>
+    <div class="grid three" style="margin-top:2rem">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Understand</h3>
+        <p>A clear-eyed read on your brand's prospects: demand, competitors, price, channel and naming — with a four-year forecast — so the decision is made on evidence, before you spend.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Enter</h3>
+        <p>Name and trademark, entity or cross-border set-up, storefronts on Tmall, JD and Douyin, and a launch built for how Chinese consumers actually discover brands today.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Operate</h3>
+        <p>We stay and run it — operations, marketing, finance, HR, tech — with complete transparency. You keep the brand; we carry the business on the ground.</p>
+      </div>
+    </div>
+    <p style="margin-top:2rem"><a href="what-we-do.html">How we work →</a></p>
+  </div>
+</section>
+
+<section class="deep">
   <div class="wrap">
     <div class="eyebrow">Trusted by</div>
     <h2>Britain's most compelling luxury and lifestyle brands</h2>
@@ -85,12 +128,7 @@
       <span>Double Dutch</span>
       <span>Varley</span>
     </div>
-  </div>
-</section>
-
-<section class="deep">
-  <div class="wrap">
-    <blockquote>
+    <blockquote style="margin-top:3rem">
       “Their agility, work ethic and fundamental understanding of the market make them a natural partner for bridging East and West.”
       <footer>Mervyn Davies, Lord Davies of Abersoch CBE · former Group CEO, Standard Chartered</footer>
     </blockquote>
@@ -100,23 +138,22 @@
 <section>
   <div class="wrap">
     <div class="stats">
-      <div class="stat"><b>30+</b><span>years of combined experience in the region</span></div>
-      <div class="stat"><b>3</b><span>offices — London, Shanghai, Hong Kong</span></div>
-      <div class="stat"><b>2020</b><span>founded, by two former Jardine Matheson leaders</span></div>
-      <div class="stat"><b>4-yr</b><span>horizon on every market entry plan</span></div>
+      <div class="stat"><b>30+</b><span>years building consumer businesses in the region</span></div>
+      <div class="stat"><b>3</b><span>offices — Hong Kong, Shanghai, London</span></div>
+      <div class="stat"><b>2</b><span>founders with business-level Mandarin and Jardine Matheson careers</span></div>
+      <div class="stat"><b>4-yr</b><span>horizon on every plan we write</span></div>
     </div>
   </div>
 </section>
 
-<section class="deep">
+<section class="band">
   <div class="wrap">
-    <div class="teaser">
-      <div>
-        <div class="eyebrow">Coming soon</div>
-        <h2 style="margin-bottom:.4em">What is your brand called in Chinese?</h2>
-        <p class="muted" style="margin:0">Enter your brand name and get instant Chinese name options — with meanings, connotations and why it matters that you register first.</p>
-      </div>
-      <div class="zh">名字</div>
+    <div class="eyebrow">Next step</div>
+    <h2>Get a China read on your brand.</h2>
+    <p class="lede">A first conversation is free and honest. Tell us who you are; we'll tell you what we see — including if the answer is “not yet”.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="team.html#contact">Talk to us</a>
+      <a class="btn ghost" href="entering-china.html">Read the primer first</a>
     </div>
   </div>
 </section>
