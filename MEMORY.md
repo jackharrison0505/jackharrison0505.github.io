@@ -70,6 +70,60 @@ visitors immediate insights on their brand's prospects in China.
   their face", "answer on WeChat in minutes", the 2020→now comparison lines. Soften or cut
   anything ArcOn doesn't actually do.
 
+### 2026-09-21 — Session 1, later still: v3 — the evolved offering
+Jack: "have a hard look back on previous documents and pitches to really evolve our offering
+— we are strategic partners to help you access and then operate the market."
+
+**Sources read** (Drive `My Drive/AO/…`, `Downloads/`): *Where We Go* + *What's Next* (Jul/Aug
+2026 strategy papers), *Business Model & Strategy Proposal v2.1* (Mel, Jul 2026), *2025 About
+Us* deck (Nov 2025), RSG Hospitality proposal (Aug 2026), Little Moons Chinese Naming
+Workshop (Jun 2026), *ArcOn on the Rise* workshop 2026, WTM flyer. PDFs extracted with a tiny
+Swift/PDFKit tool (no poppler on this Mac) at scratchpad `pdf2txt`.
+
+**The offering, as the documents actually say it** (now the spine of the site):
+- Positioning: founder-led **strategic partner for established consumer brands growing
+  through China — access, then operate.** Not an agency, not a strategy house.
+- The gap: strategy firms give PowerPoint not execution; local agencies know culture not
+  operations; boutiques sell PDFs not partnerships. *"If you don't have local arms — we are."*
+- **Three engines / three ways in:** (1) Strategy Sprint — founder-led 2-day War Room,
+  commercial blueprint, go/no-go, 10–14 wks; (2) Build & Operate — assets + partnerships,
+  delivered through a **vetted Alliance Network we select, contract and govern**; one point
+  of contact, one P&L, strategic retainer with founder access; (3) The Venture — "a partner,
+  not a vendor": stake alongside a modest fee, board seat, we choose the operators.
+- Delivery doctrine: **"strategists, not executioners"** — architect and guardian, never the
+  operator. Public phrasing reconciles Jack's "operate the market" with this: *we operate it
+  for you through governed specialists.*
+- Two audiences: brands entering China; **hotels/destinations reaching Chinese travellers**
+  (Aman, MO, Explora, Oman, RSG — the bulk of the book). Unified as "China's consumer — at
+  home and when they travel". China-out mentioned lightly.
+- **AI visibility** as a real, new product line: Doubao, DeepSeek, Kimi, Yuanbao, Tongyi
+  Qianwen; 440M MAU AI-native apps Q1 2026; 90%+ on domestic models; Audit + Monitoring,
+  partner-delivered, ArcOn owns interpretation. This is the "evolve with AI" hook Jack wanted.
+- Naming methodology (Little Moons deck): phonetic / semantic / hybrid pathways; the
+  "three-second shelf test"; master name + defensive family; dual word-mark, full-class TM.
+  Now reflected in the naming demo tags and the primer.
+- Sectors: ultra-luxury hospitality & wellness, premium F&B, fashion/accessories/lifestyle.
+  Client standard: established brands (internal docs say ~$100M+; site says it softly).
+
+**Site changes:** new nav — Home · How we work · Work · Entering China · Team & contact.
+`what-we-do.html` → `how-we-work.html` (three engines in depth, Alliance Network, principles,
+AI visibility, who we work with). New `work.html` with 8 case studies from the About Us deck
+(Aman & Janu, Mandarin Oriental, Explora Journeys, Little Moons, Varley, Villeroy & Boch,
+Charbonnel et Walker, Oman/Gulf). Home rebuilt: naming hero → "strategic partner: access →
+operate" thesis → the gap → three engines → two audiences → AI band → clients → CTA. Primer
+point 1 now teaches the three naming pathways; point 3 adds AI assistants as a channel;
+point 6 reframed as "you need a partner who stays". Team updated to the Nov 2025 deck roster.
+Contact email set to **hello@arconbrands.com** (public on the WTM flyer) — Jack had said TBC.
+
+**⚠ Confidentiality rule applied:** nothing from the strategy papers about revenue, margins,
+fees, pipeline names, founder economics or internal critique goes on the site. Only
+positioning, offer structure and clients already public in the About Us deck / flyer.
+
+**⚠ For Jack to check:** the team roster (2025 deck vs. current); Janu and Oman Tourism named
+as clients; "Little Moons — domestic-launch planning now in scope"; the AI stats (from Mel's
+deck — confirm sources before they go further); "sold his first China project at 25" (from
+the workshop story) — fine to cut if too personal.
+
 ## Key Decisions
 
 | Date | Decision | Reasoning |
@@ -78,6 +132,8 @@ visitors immediate insights on their brand's prospects in China.
 | 2026-09-21 | **Pages (v1):** Home, What We Do, Entering China, Team / Contact | Covers the brief; a fifth page/section for the AI tool comes in Phase 2 |
 | 2026-09-21 | **Entering China = short primer** | One page: key considerations, common pitfalls, how ArcOn helps. Positions ArcOn as the guide without giving everything away |
 | 2026-09-21 | **Design: fresh, minimal look** → **v2: bold** | Started minimal; Jack's reaction to v1 was "feels the same as before", so v2 leads with the interactive Chinese-name hero on dark ink. Inner pages stay calm |
+| 2026-09-21 | **Positioning = strategic partner, access → operate** | Jack's brief plus every internal strategy doc since Jul 2026. Replaces "understand China first" (v2), which was my construction; this one is theirs |
+| 2026-09-21 | **Reuse ArcOn's own frameworks verbatim where possible** | Three engines, the gap, Alliance Network, naming pathways, AI visibility — all from their decks. Their language, their thinking; the site should sound like the pitch room |
 | 2026-09-21 | **Naming demo ships before the AI tool** | A curated, fact-checked set of famous names makes the hero genuinely interactive today with zero hallucination risk; the AI version slots in behind the same UI |
 | 2026-09-21 | **Stack: plain HTML/CSS/JS for the site + one serverless function for the AI tool** | Jack hasn't built a site before, so the site itself stays as simple as possible (files you can open and read). The AI tool needs a server-side piece so the API key is never exposed in the browser — a single serverless function (Vercel/Netlify/Cloudflare) is the smallest way to do that |
 | 2026-09-21 | **Two phases** | Phase 1: brochure site, deployable on its own. Phase 2: AI Brand Insight tool. Ship value early; the tool has more unknowns |
@@ -158,9 +214,9 @@ _Ideas discussed together — including ones we have not acted on yet._
 
 - [x] Phase 1: build the four-page brochure site (plain HTML/CSS)
 - [x] Draft content for "What We Do" and the "Entering China" primer
-- [ ] Jack reviews v2 wording — especially the ⚠ claims above
+- [ ] Jack reviews v3 — especially the ⚠ items above (team roster, client names, AI stats)
 - [ ] OG share image (1200×630) so links preview with a picture
-- [ ] Contact email (TBC) — swap the LinkedIn button for mailto when decided
+- [x] Contact email → hello@arconbrands.com (from the public flyer; revert if wrong)
 - [x] Publish to GitHub Pages → https://jackharrison0505.github.io/
 - [x] Decide hosting → GitHub Pages
 - [ ] Phase 2: design and build the "Your Name in Chinese" tool

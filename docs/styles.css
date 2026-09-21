@@ -265,3 +265,56 @@ footer.site a:hover { color: var(--accent); }
 .band .btn.primary:hover { background: #e04a3f; }
 .band .btn.ghost { color: var(--paper); border-color: #555b63; }
 .band .btn.ghost:hover { background: var(--paper); color: var(--ink); }
+
+/* ===== v3: strategic partner ===== */
+.gap { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 2rem; }
+.gap .card { border-top: 3px solid var(--accent); }
+.gap .card .who { font-size: 0.78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+.punch { font-family: var(--serif); font-size: clamp(1.4rem, 2.6vw, 2rem); margin-top: 2.5rem; max-width: 30ch; }
+.punch em { color: var(--accent); font-style: normal; }
+
+.engines { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 2rem; }
+.engine { padding: 32px 28px; border-radius: 12px; background: var(--paper); border: 1px solid var(--line); display: flex; flex-direction: column; }
+.engine .k { font-family: var(--serif); color: var(--accent); font-size: 0.95rem; letter-spacing: .04em; margin-bottom: 10px; }
+.engine h3 { margin-bottom: .3em; }
+.engine .for { color: var(--muted); font-size: .92rem; margin-bottom: 1rem; }
+.engine ul { margin: 0 0 1rem; padding-left: 1.1em; color: var(--ink-soft); font-size: .97rem; }
+.engine ul li { margin: 4px 0; }
+.engine .foot { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); font-size: .9rem; color: var(--ink-soft); }
+.engine.featured { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.engine.featured h3, .engine.featured ul, .engine.featured .foot { color: var(--paper); }
+.engine.featured .for { color: #c9c4b9; } .engine.featured .foot { border-color: #3a3f47; }
+
+.aud { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 2rem; }
+.aud > div { padding: 32px; border-radius: 12px; border: 1px solid var(--line); background: var(--paper); }
+.aud .big { font-family: var(--serif); font-size: 2.4rem; line-height: 1; color: var(--accent); margin-bottom: 8px; }
+.aud .src { font-size: .8rem; color: var(--muted); }
+@media (max-width: 760px) { .aud { grid-template-columns: 1fr; } }
+
+.logos { display: flex; flex-wrap: wrap; gap: 14px 36px; margin-top: 1.6rem; }
+.logos span { font-family: var(--serif); font-size: 1.2rem; color: var(--ink-soft); white-space: nowrap; }
+
+.ai { background: var(--ink); color: var(--paper); }
+.ai h2 { color: var(--paper); } .ai .lede, .ai p { color: #c9c4b9; }
+.ai .models { display: flex; flex-wrap: wrap; gap: 10px; margin: 1.4rem 0; }
+.ai .models span { border: 1px solid #3a3f47; border-radius: 999px; padding: 6px 14px; font-size: .9rem; color: var(--paper); }
+.ai .stat b { color: var(--paper); } .ai .stat span { color: #8a8f97; }
+.ai .btn.primary { background: var(--accent); border-color: var(--accent); }
+
+.cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 2rem; }
+.case { padding: 28px; border-radius: 12px; border: 1px solid var(--line); background: var(--paper); }
+.case .sector { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.case h3 { margin: .3em 0 .2em; }
+.case .brief { color: var(--muted); font-size: .92rem; margin-bottom: .9rem; }
+.case p { font-size: .97rem; color: var(--ink-soft); margin-bottom: .6rem; }
+.case .did { font-size: .9rem; color: var(--ink-soft); }
+.case .did strong { color: var(--ink); }
+.case-lg { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+@media (max-width: 760px) { .case-lg { grid-template-columns: 1fr; } }
+
+.principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px 40px; margin-top: 2rem; }
+.principles h3 { font-size: 1.15rem; margin-bottom: .3em; }
+.principles p { color: var(--ink-soft); font-size: .97rem; margin: 0; }
+
+.network { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 1.5rem; }
+.network span { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; font-size: .92rem; background: var(--paper); }
